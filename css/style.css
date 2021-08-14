@@ -5,10 +5,13 @@
 }
 
 /* COMMON */
+body {
+    background-color: rgb(255, 245, 226);
+}
+
 .wrapper {
-    width: 80%;
+    width: 50%;
     height: 100vh;
-    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
 
