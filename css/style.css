@@ -3,3 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* COMMON */
+.wrapper {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER */
+header {
+    height: 100px;
+    background-color: rgb(253, 187, 64);
+}
