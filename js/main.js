@@ -3,3 +3,7 @@
 //RICHIEDO IL NOME DEL CLIENTE
 var customerName = prompt('Inserisci il tuo nome');
 document.getElementById('customer-name').innerHTML = customerName;
+
+//PREZZO BASE HAMBURGER
+let hamburgerPrice = 5;
+//FUNZIONI
