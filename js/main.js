@@ -6,4 +6,5 @@ document.getElementById('customer-name').innerHTML = "Welcome" + " " + customerN
 
 //PREZZO BASE HAMBURGER
 let hamburgerPrice = 5;
+document.getElementById('final-price').innerHTML = "€" + " " + hamburgerPrice;
 //FUNZIONI

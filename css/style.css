@@ -15,7 +15,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
 /* HEADER */
 header {
     height: 100px;
@@ -53,4 +52,11 @@ form img {
     background-color: white;
     color: rgb(211, 51, 89);
     border: none;
+}
+
+/* FOOTER */
+footer {
+    height: 100px;
+    background-color: rgb(211, 51, 89);
+    color: white;
 }
