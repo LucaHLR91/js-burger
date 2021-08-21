@@ -54,6 +54,21 @@ form img {
     border: none;
 }
 
+#discount-code {
+    background-color: rgb(255, 245, 211);
+    border: none;
+    border-radius: 5px;
+    
+}
+
+#calculate-button {
+    background-color: rgb(253, 187, 64);
+    border: none;
+    border-radius: 5px;
+    font: 20px;
+    font-weight: bold;
+}
+
 /* FOOTER */
 footer {
     height: 100px;
