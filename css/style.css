@@ -36,12 +36,21 @@ form img {
     width: 50px;
 }
 
-form label {
-    width: 20%;
+.form-check div {
+    width: calc(100% / 4);
+}
+
+.form-check-input {
+    background-color:rgb(211, 51, 89);
+}
+
+.form-check-input:hover,
+.form-check-label:hover {
+    cursor: pointer;
 }
 
 #add {
     background-color: white;
-    color: tomato;
+    color: rgb(211, 51, 89);
     border: none;
 }
