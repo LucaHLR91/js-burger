@@ -1,7 +1,7 @@
 // Il programma dovrà consentire di calcolare il prezzo del panino selezionando o deselezionando gli ingredienti proposti.
 
 //RICHIEDO IL NOME DEL CLIENTE
-var customerBurgerName = prompt('Inserisci il nome del panino');
+var customerBurgerName = prompt('Dai un nome al tuo panino');
 document.getElementById('customer-name').innerHTML = customerBurgerName;
 
 //PREZZO BASE HAMBURGER
