@@ -4,225 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSTRAP IMPORT -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <!-- FONT IMPORT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
-    <!-- CSS IMPORT -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Burger</title>
+    <title>Boolean Burger</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
         <!-- HEADER -->
         <header>
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-6">
-                        <div id="title" class="d-flex align-items-center">
-                            <h1>Create Your Burger</h1>
-                        </div>
-                    </div>
-                    <div class="col-6 p-0">
-                        <div id="logo" class="d-flex justify-content-end">
-                            <img src="img/burger-top.png" alt="Logo Burger Shop">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h1>Create Your Burger</h1>
         </header>
-        <!-- /HEADER -->
 
         <!-- MAIN -->
         <main>
-            <!-- MAIN TITLE NAME -->
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="customer">
-                                <h2 id="customer-name"></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div class="name-buger">
+                <input type="text" id="name" name="name" placeholder="Name Your Burger"> 
+            </div>
+            <h2 class="main-title">Ingredients</h2>
+
             <!-- INGREDIENTS -->
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3>Ingredients</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 d-flex flex-column">
-                            <form action="">
-                                <!-- CHEESE LABEL -->
-                                <div class="form-check d-flex justify-content-around align-items-center">
-                                    <div class="cheese-img">
-                                        <img src="img/cheese.svg" alt="">
-                                    </div>
-                                    <div class="cheese-label">
-                                        <label class="form-check-label" for="cheese">
-                                          Cheese
-                                        </label>
-                                    </div>
-                                    <div class="cheese-input">
-                                        <input class="form-check-input m-0" type="checkbox" value="" id="cheese">
-                                    </div>
-                                    <div class="add">
-                                        <button id="add">Add</button>
-                                    </div>
-                                </div>
-
-                                <!-- EGG LABEL -->
-                                <div class="form-check d-flex justify-content-around align-items-center">
-                                    <div class="egg-img">
-                                        <img src="img/fried-egg.svg" alt="">
-                                    </div>
-                                    <div class="egg-label">
-                                        <label class="form-check-label" for="egg">
-                                          Egg
-                                        </label>
-                                    </div>
-                                    <div class="egg-input">
-                                        <input class="form-check-input m-0" type="checkbox" value="" id="egg">
-                                    </div>
-                                    <div class="add">
-                                        <button id="add">Add</button>
-                                    </div>
-                                </div>
-
-                                <!-- MUSTARD LABEL -->
-                                <div class="form-check d-flex justify-content-around align-items-center">
-                                    <div class="mustard-img">
-                                        <img src="img/mustard.svg" alt="">
-                                    </div>
-                                    <div class="mustard-label">
-                                        <label class="form-check-label" for="mustard">
-                                          Mustard
-                                        </label>
-                                    </div>
-                                    <div class="mustard-input">
-                                        <input class="form-check-input m-0" type="checkbox" value="" id="mustard">
-                                    </div>
-                                    <div class="add">
-                                        <button id="add">Add</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-6 d-flex flex-column">
-                            <form action="">
-                                <!-- TOMATO LABEL -->
-                                <div class="form-check d-flex justify-content-around align-items-center">
-                                    <div class="tomato-img">
-                                        <img src="img/tomato.svg" alt="">
-                                    </div>
-                                    <div class="tomato-label">
-                                        <label class="form-check-label" for="tomato">
-                                          Tomato
-                                        </label>
-                                    </div>
-                                    <div class="tomato-input">
-                                        <input class="form-check-input m-0" type="checkbox" value="" id="tomato">
-                                    </div>
-                                    <div class="add">
-                                        <button id="add">Add</button>
-                                    </div>
-                                </div>
-
-                                <!-- LETTUCE LABEL -->
-                                <div class="form-check d-flex justify-content-around align-items-center">
-                                    <div class="lettuce-img">
-                                        <img src="img/lettuce.svg" alt="">
-                                    </div>
-                                    <div class="lettuce-label">
-                                        <label class="form-check-label" for="lettuce">
-                                          Lettuce
-                                        </label>
-                                    </div>
-                                    <div class="lettuce-input">
-                                        <input class="form-check-input m-0" type="checkbox" value="" id="lettuce">
-                                    </div>
-                                    <div class="add">
-                                        <button id="add">Add</button>
-                                    </div>
-                                </div>
-
-                                <!-- KETCHUP LABEL -->
-                                <div class="form-check d-flex justify-content-around align-items-center">
-                                    <div class="ketchup-img">
-                                        <img src="img/ketchup.svg" alt="">
-                                    </div>
-                                    <div class="ketchup-label">
-                                        <label class="form-check-label" for="ketuchup">
-                                          Ketchup
-                                        </label>
-                                    </div>
-                                    <div class="ketchup-input">
-                                        <input class="form-check-input m-0" type="checkbox" value="" id="ketchup">
-                                    </div>
-                                    <div class="add">
-                                        <button id="add">Add</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+            <div class="ingredients">
+                <div class="ingredient">
+                    <img class="ingredient-image" src="img/cheese.svg" alt="cheese">
+                    <label for="">Cheese</label>
+                    <div class="checkbox">
+                        <input type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="cheese" value="5">
+                        <span class="ingredient-add">add</span>
                     </div>
                 </div>
-            </section>
-            <!-- DISCOUNT CODE -->
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-3">
-                            <div>
-                                <p>Discount</p>
-                            </div>
-                        </div>
-                        <div class="col-8">
-                            <div>
-                                <input type="text" name="discount" id="discount-code" placeholder="12345ABCDE">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- CALCULATION BUTTON -->
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 d-flex justify-content-center">
-                            <button id="calculate-button" class="px-4">Calculate</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- /MAIN -->
 
-        <!-- FOOTER -->
-        <footer>
-            <div class="container">
-                <div class="row d-flex align-items-center">
-                    <div class="col-6">
-                        <h2 class="p-4">Your Price</h2>
+                <div class="ingredient">
+                    <img class="ingredient-image" src="img/fried-egg.svg" alt="egg">
+                    <label for="">Egg</label>
+                    <div class="checkbox">
+                        <input type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="cheese" value="5">
+                        <span class="ingredient-add">add</span>
                     </div>
-                    <div class="col-6">
-                        <h2 id="final-price" class="p-4"></h2>
+                </div>
+
+                <div class="ingredient">
+                    <img class="ingredient-image" src="img/mustard.svg" alt="mustard">
+                    <label for="">Mustard</label>
+                    <div class="checkbox">
+                        <input type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="cheese" value="5">
+                        <span class="ingredient-add">add</span>
+                    </div>
+                </div>
+
+                <div class="ingredient">
+                    <img class="ingredient-image" src="img/tomato.svg" alt="tomato">
+                    <label for="">Tomato</label>
+                    <div class="checkbox">
+                        <input type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="cheese" value="5">
+                        <span class="ingredient-add">add</span>
+                    </div>
+                </div>
+
+                <div class="ingredient">
+                    <img class="ingredient-image" src="img/lettuce.svg" alt="lettuce">
+                    <label for="">Lettuce</label>
+                    <div class="checkbox">
+                        <input type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="cheese" value="5">
+                        <span class="ingredient-add">add</span>
+                    </div>
+                </div>
+
+                <div class="ingredient">
+                    <img class="ingredient-image" src="img/ketchup.svg" alt="ketchup">
+                    <label for="">Ketchup</label>
+                    <div class="checkbox">
+                        <input type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="cheese" value="5">
+                        <span class="ingredient-add">add</span>
                     </div>
                 </div>
             </div>
+            <!-- DISCOUNT -->
+            <div class="discount">
+                <label for="coupon">Discount Coupon</label>
+                <input type="text" name="coupon" id="coupon" placeholder="123456ABCDEF">
+            </div>
+            <div class="submit">
+                <button id="button" class="btn">Calculate</button>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <h2>Your Price</h2>
+            <div class="price-container">$ <span id="price" >50</span></div>
         </footer>
-        <!-- /FOOTER -->
-    </div>
 
-    <!-- BOOTSTRAP IMPORT -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>

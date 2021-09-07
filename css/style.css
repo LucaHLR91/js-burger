@@ -5,73 +5,131 @@
 }
 
 /* COMMON */
-body {
-    background-color: rgb(255, 245, 226);
-}
-
-.wrapper {
+.container {
     width: 50%;
     height: 100vh;
-    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
 }
 
 /* HEADER */
 header {
+    position: relative;
+    width: 100%;
     height: 100px;
     background-color: rgb(253, 187, 64);
 }
 
-header #title {
-    height: 100px;
+header::after {
+    position: absolute;
+    top: -20%;
+    left: 80%;
+    content: '';
+    width: 256px;
+    height: 256px;
+    background-image: url(../img/burger-top.png);
+    background-repeat: no-repeat;
 }
 
 /* MAIN */
-main {
-    background-color: white;
+.ingredients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-
-form img {
-    width: 50px;
+.ingredient {
+    width: 50%;
+    height: 56px;
+    margin-bottom: 16px;
+    line-height: 56px;
 }
 
-.form-check div {
-    width: calc(100% / 4);
+.ingredient-image {
+    height: 56px;
+    margin-right: 16px;
+    vertical-align: middle;
 }
 
-.form-check-input {
-    background-color:rgb(211, 51, 89);
+.ingredient label {
+    vertical-align: middle;
 }
 
-.form-check-input:hover,
-.form-check-label:hover {
-    cursor: pointer;
+.ingredient .checkbox {
+    display: inline-block;
+    width: 150px;
+    height: 56px;
+    vertical-align: middle;
+    line-height: 56px;
 }
 
-#add {
-    background-color: white;
+.ingredient .checkbox input[type=checkbox] {
+    visibility: hidden;
+}
+
+.ingredient .checkbox span {
+    position: relative;
+    padding-left: 30px;
     color: rgb(211, 51, 89);
-    border: none;
 }
 
-#discount-code {
-    background-color: rgb(255, 245, 211);
-    border: none;
-    border-radius: 5px;
-    
+.ingredient .checkbox span:after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-60%);
+    width: 16px;
+    height: 16px;
+    background-color: rgb(211, 51, 89);
 }
 
-#calculate-button {
-    background-color: rgb(253, 187, 64);
+.ingredient input[type=checked]:checked + span:before {
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    transform: translate(-55%);
+    z-index: 1;
+    content: "\f00c";
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+}
+
+.discount {
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.discount input {
+    width: 70%;
+    margin-left: 16px;
+    padding: 8px;
     border: none;
-    border-radius: 5px;
-    font: 20px;
-    font-weight: bold;
+    border-radius: 8px;
+    background-color: #fff5e2;
+}
+
+.discount input:focus,
+.discount input:active {
+    border: none;
+    outline: none;
+    background-color: #fdbb40;
+}
+
+.submit {
+    text-align: center;
 }
 
 /* FOOTER */
+
 footer {
     height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: rgb(211, 51, 89);
     color: white;
 }
